@@ -179,6 +179,52 @@ footer nav a:hover {
     border-bottom: 1px solid white;
 }
 
+/* страница project */
+.gallery {
+    width: 90%;
+    /* расположить по середине */
+    margin: auto;
+    /* расположить в одну линию */
+    display: flex;
+    /* расстановка блоков по главной оси */
+    flex-wrap: wrap;
+    /* нижний отступ */
+    margin-bottom: 50px;
+    /* расположить элементы по центру */
+    justify-content: center;
+}
+
+.photo-itm {
+    /* разделяем фото между собой */
+    width: 25%;
+}
+
+.photo-itm img {
+    /* границы */
+    box-sizing: border-box;
+    /* чтобы картинки были адаптивными */
+    max-width: 100%;
+    /* изменение прозрачности фото */
+    opacity: 0.9;
+}
+
+/* работает только в связке с предыдущим opacity */
+.photo-itm img:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Медиа запросы */
@@ -244,6 +290,11 @@ footer nav a:hover {
     #svetok {
         width: 50px;
     } 
+/* адаптация картинок в 2 колонки */
+    .photo-itm {
+        width: 45%;
+        margin-left: 10px;
+    }
 }
 
 @media screen  and (max-width: 420px) {
@@ -255,6 +306,27 @@ footer nav a:hover {
     /* выстраиваем элементы по ширине */
     .advantages_items {
         width: 100%;
+    }
+
+    /* располагаем элементы по центру */
+    .project {
+        display: flex;
+        /* выравние элементов вдоль главной оси */
+        justify-content: center;
+        /* выравнивание элементов вдоль поперечной оси */
+        align-items: center;
+        
+    }
+
+    .gallery {
+        width: auto;
+        margin: auto;
+    }
+
+    /* адаптация фото по 1 вертикально */
+    .photo-itm {
+        width: 70%;
+        margin: 0 auto;
     }
 
 }
