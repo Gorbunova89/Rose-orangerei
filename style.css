@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content:center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 /* задаю ширину иконкам */
@@ -58,12 +58,14 @@ body {
     height: 150px;
 }
 
+/* Уменьшила размер лого в футере */
 .mini {
-    max-height: 50%;
+    height: 100px;
 } 
 
 .minilogo {
-    padding-bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 0px;
 }
 
 /* верхнее меню */
@@ -135,6 +137,7 @@ nav {
 .advantages_items {
     /* картинки встали в 2 линии */
     width: 30%;
+    padding-bottom: 20px;
 }
 
 .zagolovok {
@@ -145,8 +148,6 @@ nav {
     font-size: 1em;
     color: #282828;
 }
-
-
 
 footer {
     width: 100%;
@@ -190,9 +191,17 @@ footer nav a:hover {
         color: black;
     }
 
+    /* работаем со ссылками в хедере и футере */
     nav {
         width: 100px;
         height: 50px;
+    }
+
+    /* располагаю блок сщ ссылками горизонтально */
+    .nav_mini {
+        display: flex;
+        justify-content: center;
+
     }
 
     .topnav.responsive {
@@ -215,6 +224,10 @@ footer nav a:hover {
     /* адаптируем ширину картинок */
     .advantages_items {
         width: 45%;
+    }
+
+    p {
+        font-size: 12px;
     }
 
 }
