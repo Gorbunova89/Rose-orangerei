@@ -359,6 +359,77 @@ footer nav a:hover {
     margin: 40px 0px 40px 0px;
 }
 
+#map-header {
+    padding-left: 30px;
+    font-size: 0.6rem;
+}
+
+/* расплогаем блок с инпутами по центру ширина 50% */
+.form {
+   width: 50%;
+   margin: 50px auto;
+}
+
+.feedback-input {
+    /* цвет текста внутри инпута */
+     color: rgb(0, 0, 0);
+     font-weight: 300;
+     font-size: 14px;
+     /* высота строки */
+     line-height: 22px;
+     background-color: #e2e0e0;
+     padding: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    /* выделение рамки при наведении */
+    border: 0px solid transparent;
+    /* подчеркивание строка */
+    border-bottom: 1px solid rgb(109, 106, 106);
+}
+
+/* форма для ввода сообщения */
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+}
+
+/* стилизуем кнопку баттон внизу */
+.button-submit {
+    float: left;
+    width: 100%;
+    border: 0px solid transparent;
+    cursor: pointer;
+    background-color: #282828;
+    color: white;
+    font-size: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 300;
+}
+
+/* добавляем изменение цвета кнопки при наведении */
+.button-submit:hover {
+    background-color: rgb(10, 167, 159);
+    color: black;
+    border: 1px solid #00000b;
+}
+
+/* не совсем понятно к чему это */
+.ease {
+    width: 0;
+    height: 74px;
+    background-color: #888888;
+    transition: 0.3s ease;
+}
+
+
+
+
+
 
 
 
