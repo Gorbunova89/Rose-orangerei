@@ -162,7 +162,9 @@ footer {
     padding-top: 25px;
     /* прибиваем футер к низу ! абсолют нельзя ?*/
     /* position: absolute; */
-    bottom: 0;
+    /* bottom: 0; */
+    /* position: static; */
+    /* top: 0; */
 }
 
 footer a {
@@ -352,7 +354,10 @@ footer nav a:hover {
     padding: 0 0.5rem;
 }
 
-
+/* задаем отступы к карте */
+.map {
+    margin: 40px 0px 40px 0px;
+}
 
 
 
