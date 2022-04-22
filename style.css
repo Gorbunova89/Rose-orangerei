@@ -445,7 +445,26 @@ textarea {
     
 }
 
+.services {
+    width: 80%;
+    margin: 50px auto;
+    /* текст по центру */
+    text-align: center;
+}
 
+.services img {
+    max-width: 100%;
+}
+
+
+/* расставляем блоки на странице в 2 ряда */
+.services_container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* расставляем пробелы между блоками */
+    grid-gap: 50px 100px;
+}
 
 
 
@@ -517,6 +536,33 @@ textarea {
     #svetok {
         width: 50px;
     } 
+
+    .social img {
+        width: 25px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    } 
+
+    /* делаем изображение адаптивным */
+.graficlogo {
+    padding: 5px;
+    /* для того чтобы катинка была адаптивной */
+    max-width: 100%;
+    /* свойство которое изменяет алгоритмы высоты и ширины элемента */
+    box-sizing: border-box;
+    height: 120px;
+}
+
+/* Уменьшила размер лого в футере */
+.mini {
+    height: 50px;
+} 
+
+.minilogo {
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
 /* адаптация картинок в 2 колонки */
     .photo-itm {
         width: 45%;
@@ -525,6 +571,20 @@ textarea {
 
     .blog-container {
         width: 30rem;
+    }
+
+    .services_container {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto auto;
+        /* расставляем пробелы между блоками */
+        grid-gap: 30px 50px;
+    }
+
+    footer a {
+        color: white;
+        font-size: 11px;
+        margin-left: 8px;
     }
 }
 
@@ -545,8 +605,7 @@ textarea {
         /* выравние элементов вдоль главной оси */
         justify-content: center;
         /* выравнивание элементов вдоль поперечной оси */
-        align-items: center;
-        
+        align-items: center;   
     }
 
     .gallery {
@@ -563,5 +622,9 @@ textarea {
     .blog-container {
         width: 20rem;
     }
+
+    .services_container {
+        grid-template-columns: auto;       
+}
 
 }
